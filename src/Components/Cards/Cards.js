@@ -13,11 +13,11 @@ const Cards = ({color, duration}) => {
     }, [color, duration]);
 
     return (
-        <Box sx={{
+        <Box className="boxes" sx={{
             border: `4px solid ${color}`,
             margin: '1rem',
             borderRadius: '10px',
-            width: '40rem',
+            width: '30rem',
             height: '5rem',
             background: background,
             display: 'flex',
