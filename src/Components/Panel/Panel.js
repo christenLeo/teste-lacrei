@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Cards from "../Cards/Cards.js";
 import data from '../../data/data.json';
 import { PanelStyled } from "./style.js";
+import Results from "../Results/Results.js";
 
 const Panel = () => {
     const [showTime, setshowTime] = useState(false);
@@ -27,10 +28,7 @@ const Panel = () => {
     // Showing to the user the duration time info
     const mountDurationInfo = infoArr.map((item) => {
         return (
-            <>
-                <h2>{item.key}:</h2>
-                <p>{item.duration} miliseconds</p>
-            </>
+            <Results key={item.key} box={item.key} duration={item.duration}/>
         )
     })
 
