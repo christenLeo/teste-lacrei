@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SectionStyled = styled.section`
+export const ResultStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;

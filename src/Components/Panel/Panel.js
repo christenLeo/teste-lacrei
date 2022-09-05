@@ -39,8 +39,10 @@ const Panel = () => {
             </header>
             <main>
                 {mountCards}
-            {showTime ? mountDurationInfo : ""}
             </main>
+            <section>    
+                {showTime ? mountDurationInfo : ""}
+            </section>    
         </PanelStyled>
     );
 }

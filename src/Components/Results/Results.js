@@ -1,12 +1,12 @@
 import React from "react";
-import { SectionStyled } from "./style";
+import { ResultStyled } from "./style";
 
 const Results = ({box, duration}) => {
     return (
-        <SectionStyled aria-details="Boxes timers to change background">
+        <ResultStyled aria-details="Boxes timers to change background">
             <h3>{box}:</h3>
             <p>{duration} Miliseconds</p>
-        </SectionStyled>
+        </ResultStyled>
     )
 };
 export default Results;
